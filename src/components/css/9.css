@@ -1,0 +1,93 @@
+body{
+    font-family: 'Shabnam';
+}
+
+header {
+background-color: #B0C4DE;
+color: #B0C4DE;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+font-size: 48px;
+margin: 0;
+}
+
+nav {
+background-color: whitesmoke;
+color: #6B8E23;
+padding: 10px;
+text-align: center;
+}
+
+nav a {
+color: #FF0000;
+text-decoration: none;
+margin: 10px;
+font-size: 24px;
+font-weight: bold;
+display: inline-block;
+padding: 10px;
+border-radius: 10px;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: whitesmoke;
+color: rgb(51, 51, 51);
+}
+
+section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 20px;
+margin: 0 auto;
+max-width: 1200px;
+}
+
+article {
+background-color: #8efa00;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+border-radius: 10px;
+margin: 20px;
+padding: 20px;
+width: 300px;
+text-align: center;
+transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+box-shadow: 0 0 20px rgba(241, 241, 241, 0.5);
+}
+
+article h2 {
+font-size: 36px;
+margin: 0;
+}
+
+article p {
+font-size: 18px;
+line-height:1.5;
+margin: 10px 0;
+}
+
+footer {
+background-color: white;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+h1 {
+background-color: #8B0000;
+color: #FA8072;
+padding: 20px;
+text-align: center;
+}
