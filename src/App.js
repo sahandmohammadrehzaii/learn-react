@@ -1,17 +1,35 @@
-import React from 'react';
-import './index.css';
+//فراخوانی فسمت ها
+import Home from './components/index/Home/Home';
+import About from './components/index/About/About';
+import Center from './components/index/center/center';
+import Footer from './components/index/footer/footer';
+import { BrowserRouter as Router, Route, BrowserRouter, Routes } from 'react-router-dom';
 
-export default function App() {
+//کد های سی اس اس
+import './components/index/css/1.css';
+import './components/index/css/2.css';
+import './components/index/css/3.css';
+import './components/index/css/4.css';
+import './components/index/css/5.css';
+import './components/index/css/7.css';
+import './components/index/css/8.css';
+import './components/index/css/9.css';
+import './components/index/css/10.css';
+import Navbar from './components/Navbar';
+
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center mx-auto sm:py-12">
-      <div className="h-auto py-20 px-10 w-2/3 bg-indigo-500 flex flex-col space-y-5 mx-auto rounded-3xl shadow-xl hover:rotate-1 transition-transform">
-        <h1 className="font-medium text-white text-xl tracking-wide">Workcation</h1>
-        <h2 className="font-normal tracking-wide text-2xl text-white lg:w-2/5">Workflow has completely transformed how we interact with our customers. We've seen record bookings, higher customer satisfaction and reduced churn</h2>
-        <div className="flex flex-col">
-          <p className="font-normal text-white text-sm tracking-wider">Marie Chivers</p>
-          <p className="font-normal text-white text-sm tracking-wider">CEO Workcation</p>
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+
+      <Route path="/" exact element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/center" element={<Center/>} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
+
+export default App;
